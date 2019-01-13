@@ -1,0 +1,17 @@
+:root{
+	--red-pokedex: #ff0000;
+};
+body {
+	margin: 0;
+}
+.container {
+	display: flex;
+    width: 100vw;
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.pokedex {
+	background: var(--red-pokedex);
+}
