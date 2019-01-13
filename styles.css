@@ -12,6 +12,7 @@ body {
     font-size: 20px;
     padding: 5px 0;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .btn.option-btn {
 	background: #968ece;
@@ -36,9 +37,9 @@ body {
 .pokedex {
 	background: var(--red-pokedex);
 }
-.pokemon-image {
-    width: 450px;
-    height: 300px;
+#pokemonImage {
+    width: 400px;
+    height: 400px;
 }
 .question {
 	font-family: 'VT323', monospace;
