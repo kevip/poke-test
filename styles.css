@@ -4,6 +4,19 @@
 body {
 	margin: 0;
 }
+/* buttons */
+.btn {
+	border: 0;
+    border-radius: 4px;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+.btn.option-btn {
+	background: #968ece;
+    width: 100%;
+}
 .container {
 	display: flex;
     width: 100vw;
@@ -12,6 +25,23 @@ body {
     align-items: center;
     justify-content: center;
 }
+.options {
+	padding: 0 25%;
+}
+.options .option {
+	list-style: none;
+    text-align: center;
+    margin: 10px 0;
+}
 .pokedex {
 	background: var(--red-pokedex);
+}
+.pokemon-image {
+    width: 450px;
+    height: 300px;
+}
+.question {
+	font-family: 'VT323', monospace;
+	text-align: center;
+	font-size: 22px;
 }
