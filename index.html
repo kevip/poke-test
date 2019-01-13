@@ -8,9 +8,13 @@
 <body>
 	<div class="container">
 		<section class="pokedex">
+			<div class="pokedex-header">
+				<p>Highest score: <span id="highestScore" class="score"></span></p>
+				<p>Current score: <span id="currentScore" class="score"></span></p>
+			</div>
 			<div class="display-container">
 				<figure class="display">
-					<img id="pokemonImage" src="">
+					<img id="pokemonImage" src="https://gifimage.net/wp-content/uploads/2018/11/pixel-loading-gif-2.gif">
 					<figcaption class="question">
 						<p>What pokemon is this?</p>
 					</figcaption>
@@ -21,6 +25,22 @@
 					<button class="btn option-btn">opcion D</button>
 				</li> -->
 			</ul>
+		</section>
+		<section class="alert hide">
+			<h1 class="title">Game Over!</h1>
+			<div class="alert-body">
+				<h3>Final Score: <span id="finalScore"></span></h3>
+				<div class="answer-container">
+					<p>You chose: <span id="wrongAnswer"></span></p>
+					<p>Correct Answer: <span id="correctAnswer"></span></p>
+				</div>
+				<figure>
+					<img id="alertPokemonImage" src="">
+				</figure>
+			</div>
+			<div class="alert-footer">
+				<button class="btn yellow md" id="retry">Retry</button>
+			</div>
 		</section>
 	</div>
 	<script type="text/javascript" src="main.js"></script>

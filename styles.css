@@ -1,21 +1,70 @@
 :root{
+	--dark-green: #287472;
+	--pokemon-font: 'VT323', monospace;
+	--purple: #968ece;
 	--red-pokedex: #ff0000;
+	--yellow: #e7e788;
 };
 body {
 	margin: 0;
+}
+.alert {
+	background: var(--dark-green);
+	font-family: var(--pokemon-font);
+	padding-bottom: 25px;
+}
+.alert .alert-body {
+    margin: 10px 20px;
+    text-align: center;
+    background: rgba(30, 40, 100, 0.3);
+    color: var(--yellow);
+}
+.alert .alert-body h3{
+	font-size: 40px;
+    font-weight: 100;
+}
+.alert .alert-body h3,
+.alert .alert-body .answer-container,
+.alert .title{
+	font-weight: 100;
+}
+.alert .alert-body .answer-container {
+	background: rgba(1,1,1,0.2);
+	border-radius: 5px;
+}
+.alert .alert-body .answer-container p {
+	font-size: 25px;
+}
+.alert.hide{
+	display: none;
+}
+.alert-footer{
+	text-align: center;
+}
+.alert .title{
+	color: #fff;
+	font-size: 60px;
+	text-align: center;
 }
 /* buttons */
 .btn {
 	border: 0;
     border-radius: 4px;
-    font-family: 'VT323', monospace;
+    font-family: var(--pokemon-font);
     font-size: 20px;
     padding: 5px 0;
     text-transform: uppercase;
     cursor: pointer;
 }
+.btn.yellow {
+	background: var(--yellow);
+}
+.btn.md {
+	font-size: 26px;
+    padding: 5px 50px;
+}
 .btn.option-btn {
-	background: #968ece;
+	background: var(--purple);
     width: 100%;
 }
 .container {
@@ -31,18 +80,39 @@ body {
 }
 .options .option {
 	list-style: none;
-    text-align: center;
     margin: 10px 0;
+    text-align: center;
 }
 .pokedex {
 	background: var(--red-pokedex);
+}
+.pokedex.hide {
+	display: none;
+}
+.pokedex .pokedex-header{
+	background: var(--purple);
+	text-align: center;
+}
+.pokedex .pokedex-header p {
+	font-family: var(--pokemon-font);
+	font-size: 22px;
+	text-align: right;
+    padding: 15px 5px 0 0;
+    margin: 0;
+}
+.pokedex .pokedex-header .score {
+	background: gray;
+	padding: 3px 2px 0 2px;
 }
 #pokemonImage {
     width: 400px;
     height: 400px;
 }
+#alertPokemonImage {
+	width: 270px;
+}
 .question {
-	font-family: 'VT323', monospace;
+	font-family: var(--pokemon-font);
 	text-align: center;
 	font-size: 22px;
 }
